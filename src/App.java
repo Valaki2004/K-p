@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception 
     {
-
         Scanner reader = new Scanner(System.in);
 
         System.out.print("Magasság:" );
@@ -14,9 +13,9 @@ public class App {
         String egystr = reader.nextLine();
         Double egy = Double.parseDouble(egystr);
 
-        Double Eredmenyter = 1/3 * (Math.pow(egy, 2) * mag);
-        System.out.println("A négyzet területe:" + Eredmenyter);
-        Double Eredmenyterfog = 1/3 * (Eredmenyter * mag);
+        Double Eredmenyter = 1/3.0 * Math.pow(egy, 2) * mag;
+        System.out.println("A gúla területe:" + Eredmenyter);
+        Double Eredmenyterfog = 1/3.0 * Eredmenyter * mag;
         System.out.println("A gúla térfogata: " + Eredmenyterfog );
 
         reader.close();
